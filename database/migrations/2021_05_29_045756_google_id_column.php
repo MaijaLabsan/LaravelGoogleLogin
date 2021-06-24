@@ -1,10 +1,10 @@
 <?php
-
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+  
 use Illuminate\Support\Facades\Schema;
-
-class AddGoogleIdColumn extends Migration
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+   
+class GoogleIdColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,7 @@ class AddGoogleIdColumn extends Migration
             $table->string('google_id')->nullable();
         });
     }
-
+   
     /**
      * Reverse the migrations.
      *
